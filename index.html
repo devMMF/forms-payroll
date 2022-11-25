@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <title> Folha Pagamento</title>
+</head>
+<body>
+    <main>
+        <form action="src/php/form.php" method="post">
+
+            <label for="nome">Nome do Funcionário:</label> 
+            <input type="text" name="nome" value="">
+            <br>
+            <br>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" value="">
+            <br>
+            <br>
+
+            <label for="cg">Cargo:</label> 
+            <select name="cargo">
+                <option value="Diretor">Diretor</option>
+                <option value="Coordenador">Coordenador</option>
+                <option value="Agente">Agente</option>
+                <option value="Auxiliar">Auxiliar</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="unidade">Unidades de atuação:</label>
+            <ul style="list-style: none;">
+                <li> <input type="checkbox" name="sc_urbano" value="un_1">São Carlos (Urbano)</li>
+                <li> <input type="checkbox" name="sc_rural" value="un_2">São Carlos (Rural)</li>
+                <li> <input type="checkbox" name="ibate" value="un_3">Ibaté</li>
+                <li> <input type="checkbox" name="araraquara" value="un_4">Araraquara</li>
+                <li> <input type="checkbox" name="distrito" value="un_5">Distritos</li>
+            </ul>
+
+            <label for="tipo_salario">Tipo Salário:</label>
+            <ul style="list-style: none;">
+            <li> <input type="radio" name="tp_sl" value="Horista">Horista</li>
+            <li> <input type="radio" name="tp_sl" value="Mensalista">Mensalista</li>
+            </ul>
+            
+            <label for="hora_trabalhada">Horas trabalhadas:</label>
+            <input type="text" name="hr_trabalho" value="">
+            <br>
+            <br>
+            <label for="salario_base">Valor do Salário base:</label>
+            <input type="text" name="sl_base" value="">
+            <br>
+            <br>
+            <label for="qt_dependente">Número de Dependentes:</label>
+            <input type="text" name="Dependente" value="">
+            <br>
+            <br>
+
+            <div class="button">
+                <input type="submit" name="botao" value="Enviar">
+                <span class="espaco"></span>
+                <input type="submit" name="botao" value="Cancelar">
+            </div>
+            
+
+        </form>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+body{
+    background-color: lightblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main{
+    background-color: white;
+    width: 370px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1cm;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.espaco {
+    padding-left: 10px;
+  }
